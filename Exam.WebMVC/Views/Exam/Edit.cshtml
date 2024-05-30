@@ -1,0 +1,47 @@
+﻿@model Examm
+
+
+<form method="post">
+
+    <input asp-for="ExamId" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary"> Edit category </h2>
+            <hr />
+        </div>
+ 
+            <label asp-for="LessonCode" class="p-0"></label>
+            <input asp-for="LessonCode" class="form-control" />
+        </div>
+
+        <div class="mb-3 row p-1">
+            <label asp-for="StudentNo" class="p-0"></label>
+            <input asp-for="StudentNo" class="form-control" />
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="ExamDate" class="p-0"></label>
+            <input asp-for="ExamDate" class="form-control" />
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Point" class="p-0"></label>
+            <input asp-for="Point" class="form-control" />
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control"> Update</button>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <a asp-action="Index" class="btn btn-secondary border form-control">
+                    Ana Sayfa
+                </a>
+            </div>
+
+        </div>
+
+
+    </div>
+</form>
